@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfert de données</title>
+
+    <!--============ Font family ===========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!--============ Custom CSS ==============-->
+    <style>
+      :root {
+        --plain-white: #FFFFFF;
+        --primary-black: #212121;
+        --primary-grey: #666666;
+        --grey-mid: #9D9D9D;
+        --grey-light: #EBEBEB;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Source Sans 3", serif;
+        background-color: var(--plain-white);
+      }
+      .header {
+        padding: 18px 16px;
+      }
+      .global-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+      }
+      .bg-plain-white {
+        background-color: var(--plain-white);
+      }
+      .text-orientation-center {
+        text-align: center;
+      }
+      .b-bottom {
+        border-bottom: 1px solid var(--grey-light);
+      }
+      .dashed-border {
+        border: 1px dashed var(--grey-mid);
+      }
+      .radius-16 {
+        border-radius: 16px;
+      }
+      .max-w-638 {
+        max-width: 638px;
+      }
+      .w-whole {
+        width: 100%;
+      }
+      .text-wrapping {
+        word-wrap: break-word;
+        word-break: break-word;
+      }
+      .fixed-on-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .margin-t-170 {
+        margin-top: 170px;
+      }
+      .margin-t-24 {
+        margin-top: 24px;
+      }
+      .margin-b-24 {
+        margin-bottom: 24px;
+      }
+      .content-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+      }
+      .anchor, .anchor:hover, .anchor:focus {
+        text-decoration: none;
+        display: block;
+        color: var(--primary-black);
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+
+      }
+      .generic-logo {
+        width: 167px;
+        height: 35px;
+      }
+      .generic-title {
+        color: var(--primary-black);
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 86px;
+        letter-spacing: 0.25px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .generic-desc {
+        color: var(--primary-grey);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .message {
+        padding: 8px 24px;
+      }
+      .strong-text {
+        color: var(--primary-black);
+        font-weight: 700;
+      }
+      .file-transfer-img {
+        max-width: 430px;
+        width: 100%;
+        height: 210px;
+      }
+
+      /*============= Media queries CSS ===========*/
+      @media only screen and (max-width: 460px) {
+        .generic-title {
+          font-size: 46px;
+          line-height: 56px;
+        }
+        .generic-desc {
+          font-size: 14px;
+          line-height: 24px;
+        }
+        .margin-t-170 {
+          margin-top: 110px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--=========== Header markup ============-->
+    <header class="header fixed-on-top text-orientation-center b-bottom bg-plain-white">
+      <a href="https://www.ronorp.net/" target="_blank" class="anchor text-orientation-center">
+        <img src="https://res.cloudinary.com/dqqunslwu/image/upload/v1735018253/site-logo_dkxk9z.svg" class="generic-logo" alt="logo">
+      </a>
+    </header>
+
+    <!--============ Content box markup =============-->
+    <div class="global-box">
+      <div class="content-box bg-plain-white max-w-638 w-whole margin-t-170 text-orientation-center">
+        <h1 class="generic-title text-wrapping">Même les sites web doivent parfois se déconnecter</h1>
+        <p class="generic-desc text-wrapping">Ron Orp fait une petite pause et sera de retour dès le 2 janvier – frais, urbain et plein de surprises. Comme toujours. D'ici là, reste en bonne santé et curieux!</p>
+        <div class="message generic-desc dashed-border radius-16 text-wrapping">
+          Die große Enthüllung findet statt - nicht verpassen!
+        </div>
+        <div class="w-whole margin-b-24">
+          <img src="https://res.cloudinary.com/dqqunslwu/image/upload/v1735028601/file-transfer_cmwbdb.gif" class="file-transfer-img" alt="file-transfer">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
